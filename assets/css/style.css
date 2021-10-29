@@ -6,6 +6,7 @@
 
 body {
   background-color: #dfe6e9;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
@@ -13,7 +14,7 @@ body {
 
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
 }
 
 li {
@@ -22,14 +23,40 @@ li {
   margin: 5px;
 }
 
-li a {
-  text-decoration: none;
+/* Headers */
+
+header {
+  display: flex;
 }
 
-/* Headers */
+h1 {
+  font-size: 36px;
+}
+
+h1,
+h2 {
+  color: navy;
+  background-color: #6db9ce;
+}
 
 /* Main Content */
 
 section {
   display: flex;
+  margin: 10px;
+}
+
+section h3 {
+  font-size: 36px;
+  color: navy;
+  margin: 5px;
+  border-right: 1px solid navy;
+}
+
+section p {
+  justify-content: flex-end;
+}
+
+.hero {
+  justify-content: flex-end;
 }
