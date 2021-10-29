@@ -1,0 +1,31 @@
+/* General Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dfe6e9;
+  font-size: 16px;
+}
+
+/* Headers */
+
+h1 {
+}
+/* Navigation */
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  flex-direction: row;
+  list-style: none;
+  margin: 5px;
+}
+
+li a {
+  text-decoration: none;
+}
