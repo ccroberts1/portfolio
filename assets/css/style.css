@@ -9,10 +9,6 @@ body {
   font-size: 16px;
 }
 
-/* Headers */
-
-h1 {
-}
 /* Navigation */
 
 nav ul {
@@ -28,4 +24,12 @@ li {
 
 li a {
   text-decoration: none;
+}
+
+/* Headers */
+
+/* Main Content */
+
+section {
+  display: flex;
 }
