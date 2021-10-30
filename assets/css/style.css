@@ -10,13 +10,15 @@ body {
   font-size: 16px;
 }
 
-/* Navigation */
+/* Links */
 
-nav ul {
+nav ul,
+section ul {
   display: flex;
 }
 
-li {
+nav li,
+section li {
   flex-direction: row;
   list-style: none;
   font-size: 24px;
@@ -27,7 +29,11 @@ li {
 nav a:link,
 nav a:visited {
   color: #6db9ce;
-  font-weight: bold;
+}
+
+section a:link,
+section a:visited {
+  color: #2f3c4e;
 }
 
 /* Headers */
@@ -53,6 +59,9 @@ h1 {
 
 h2 {
   font-size: 36px;
+  align-self: flex-end;
+  margin-top: 5rem;
+  margin-bottom: 0;
 }
 
 /* Main Content */
@@ -66,7 +75,6 @@ section h3 {
   color: #2f3c4e;
   margin: 0.5rem;
   padding: 0.5rem;
-  min-width: 10%;
   text-align: end;
   border-right: 3px solid #2f3c4e;
 }
@@ -80,10 +88,7 @@ section h3 {
   background-position: center;
 }
 
-.hero h2 {
-  align-items: center;
+.cols-content {
+  display: flex;
+  flex-direction: column;
 }
-
-/* .card {
-  border: 1px solid #6db9ce;
-} */
