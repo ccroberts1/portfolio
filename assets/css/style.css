@@ -29,11 +29,16 @@ section li {
 nav a:link,
 nav a:visited {
   color: #6db9ce;
+  text-decoration: none;
+  border-bottom: 3px solid #6db9ce;
+  padding-bottom: 0.2rem;
 }
 
 section a:link,
 section a:visited {
   color: #2f3c4e;
+  text-decoration: none;
+  border-bottom: 3px solid #2f3c4e;
 }
 
 /* Headers */
@@ -64,6 +69,11 @@ h2 {
   margin-bottom: 0;
 }
 
+h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
 /* Main Content */
 
 section {
@@ -91,4 +101,25 @@ section h3 {
 .cols-content {
   display: flex;
   flex-direction: column;
+}
+
+/* Card Content */
+
+#work {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  border: 3px solid #6db9ce;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 10%;
+  padding-right: 10%;
+  margin-top: 0;
+  background-color: #6db9ce;
 }
