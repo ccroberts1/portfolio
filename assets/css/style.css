@@ -110,9 +110,25 @@ section h3 {
   flex-wrap: wrap;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  transition: 0.5s ease;
+  background-color: black;
+}
+
+.card:hover .overlay {
+  opacity: 0;
+}
+
 .card {
   position: relative;
-  text-align: center;
   border: 3px solid #6db9ce;
 }
 
@@ -122,4 +138,20 @@ section h3 {
   padding-right: 10%;
   margin-top: 0;
   background-color: #6db9ce;
+  z-index: 1;
+}
+
+.card-top {
+  width: 80%;
+  max-height: 400px;
+}
+
+/* .card-cols {
+  width: 40%;
+  max-height: 200px;
+} */
+
+.img {
+  display: block;
+  width: 100%;
 }
