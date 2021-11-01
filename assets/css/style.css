@@ -101,6 +101,7 @@ section h3 {
 .cols-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 /* Card Content */
@@ -147,8 +148,6 @@ section h3 {
 }
 
 /* .card-cols {
-  width: 40%;
-  max-height: 200px;
 } */
 
 .img {
