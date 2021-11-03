@@ -1,5 +1,9 @@
-/* General Styles */
+:root {
+  --dark-theme: #2f3c4e;
+  --light-theme: #6db9ce;
+}
 
+/* General Styles */
 * {
   box-sizing: border-box;
 }
@@ -28,18 +32,23 @@ section li {
 
 nav a:link,
 nav a:visited {
-  color: #6db9ce;
+  color: var(--light-theme);
   text-decoration: none;
-  border-bottom: 3px solid #6db9ce;
   padding-bottom: 0.2rem;
+}
+
+nav a:hover {
+  background-color: rgba(109, 185, 206, 0.5);
+  color: var(--dark-theme);
 }
 
 section a:link,
 section a:visited {
-  color: #2f3c4e;
+  color: var(--dark-theme);
   text-decoration: none;
-  border-bottom: 3px solid #2f3c4e;
+  border-bottom: 3px solid var(--dark-theme);
   padding: 0 1rem;
+  margin: 0 1rem;
 }
 
 /* Headers */
@@ -47,16 +56,16 @@ section a:visited {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #2f3c4e;
+  align-items: flex-end;
+  background-color: var(--dark-theme);
   margin: 0;
-  border-bottom: 5px solid #6db9ce;
+  border-bottom: 5px solid var(--light-theme);
 }
 
 h1,
 h2 {
   color: navy;
-  background-color: #6db9ce;
+  background-color: var(--light-theme);
 }
 
 h1 {
@@ -85,7 +94,7 @@ section h3 {
   margin: 5%;
   padding: 1%;
   text-align: end;
-  border-right: 3px solid #2f3c4e;
+  border-right: 3px solid var(--dark);
 }
 
 .cols-content {
@@ -97,9 +106,9 @@ section h3 {
 }
 
 .profile-img {
-  height: 500px;
+  height: 400px;
   width: auto;
-  border: 3px solid #6db9ce;
+  border: 3px solid var(--light-theme);
 }
 
 .rows-content {
@@ -123,7 +132,7 @@ section h3 {
 
 .card {
   position: relative;
-  border: 3px solid #6db9ce;
+  border: 3px solid var(--light-theme);
   margin: 2%;
 }
 
@@ -140,7 +149,7 @@ section h3 {
   bottom: 10%;
   padding-right: 10%;
   margin-top: 0;
-  background-color: #6db9ce;
+  background-color: var(--light-theme);
   z-index: 1;
 }
 
@@ -164,4 +173,12 @@ section h3 {
 #work {
   display: flex;
   margin-top: 5%;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1300px) {
+  ul {
+    flex-direction: column;
+  }
 }
