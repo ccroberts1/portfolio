@@ -39,6 +39,7 @@ section a:visited {
   color: #2f3c4e;
   text-decoration: none;
   border-bottom: 3px solid #2f3c4e;
+  padding: 0 1rem;
 }
 
 /* Headers */
@@ -49,6 +50,7 @@ header {
   align-items: center;
   background-color: #2f3c4e;
   margin: 0;
+  border-bottom: 5px solid #6db9ce;
 }
 
 h1,
@@ -67,6 +69,7 @@ h2 {
   align-self: flex-end;
   margin-top: 5rem;
   margin-bottom: 0;
+  font-weight: lighter;
 }
 
 h4 {
@@ -76,39 +79,73 @@ h4 {
 
 /* Main Content */
 
-section {
-  display: flex;
-}
-
 section h3 {
   font-size: 36px;
   color: #2f3c4e;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 5%;
+  padding: 1%;
   text-align: end;
   border-right: 3px solid #2f3c4e;
-}
-
-.hero {
-  justify-content: flex-end;
-  max-height: 20%;
-  width: 100%;
-  background-image: url(../images/scarbor.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .cols-content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
+  width: 57%;
+}
+
+.profile-img {
+  height: 500px;
+  width: auto;
+  border: 3px solid #6db9ce;
+}
+
+.rows-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+}
+
+#about {
+  display: flex;
+  margin-top: 5%;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
 }
 
 /* Card Content */
 
-#work {
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.card {
+  position: relative;
+  border: 3px solid #6db9ce;
+  margin: 2%;
+}
+
+.card-focus img {
+  height: auto;
+  width: 80%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 10%;
+  padding-right: 10%;
+  margin-top: 0;
+  background-color: #6db9ce;
+  z-index: 1;
+}
+
+.card:hover .overlay {
+  opacity: 0;
 }
 
 .overlay {
@@ -124,33 +161,7 @@ section h3 {
   background-color: black;
 }
 
-.card:hover .overlay {
-  opacity: 0;
-}
-
-.card {
-  position: relative;
-  border: 3px solid #6db9ce;
-}
-
-.card-title {
-  position: absolute;
-  bottom: 10%;
-  padding-right: 10%;
-  margin-top: 0;
-  background-color: #6db9ce;
-  z-index: 1;
-}
-
-.card-top {
-  width: 80%;
-  max-height: 400px;
-}
-
-/* .card-cols {
-} */
-
-.img {
-  display: block;
-  width: 100%;
+#work {
+  display: flex;
+  margin-top: 5%;
 }
