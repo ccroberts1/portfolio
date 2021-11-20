@@ -10,6 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./assets/css/stylebootstrap.css" />
     <title>Caitlin Roberts - Freelance Web Developer</title>
   </head>
   <body>
@@ -42,24 +43,22 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="row justify-content-center">
+    <div class="container-fluid">
+      <div class="row">
         <!-- Hero-->
-        <div class="col-12 hero text-center">
-          <h1 class="display-5 fw-bold">Caitlin Roberts</h1>
-          <div class="col-lg-6 mx-auto">
-            <h2>Tagline</h2>
-          </div>
+        <div class="col-12 px-0 text-center" id="hero">
+          <h1 class="display-3 mt-5 mb-0">Caitlin Roberts</h1>
+          <div class="col-12 mx-auto"></div>
         </div>
         <!-- About Me -->
-        <div class="col-12" id="aboutMe"></div>
-        <h3 class="text-center">Hi, I'm Caitlin!</h3>
+        <div class="col-12 d-flex justify-content-center" id="aboutMe"></div>
+        <h2 class="text-center intro-heading">Hi, I'm Caitlin!</h2>
 
-        <p class="lead text-center">
+        <h3 class="text-center intro-text fw-bold">
           I'm a freelance web developer based out of Denver, CO.
-        </p>
+        </h3>
 
-        <p class="text-center">
+        <p class="text-center intro-text">
           I've been interested in web development most of my life, starting with
           teaching myself to build websites while in high school. I have a
           wealth of experience in research and insatiable curiosity from a
@@ -68,11 +67,12 @@
           development bootcamp at the University of Denver.
         </p>
 
-        <div class="col-12">
+        <div class="col-12 d-flex justify-content-center">
           <img
             src="./assets/images/profile.jpg"
             alt="profile photo of Caitlin Roberts"
             width="50%"
+            id="profile"
           />
         </div>
         <!-- Work -->
@@ -153,7 +153,7 @@
         <!-- Contact Me -->
         <div class="col-12" id="contactMe">
           <div class="col-12">
-            <h2 class="text-center">Contact Me</h2>
+            <h3 class="text-center">Contact Me</h3>
             <p class="lead text-center">
               If you have a project you'd like to collaborate on, please feel
               free to reach out!

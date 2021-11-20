@@ -1,0 +1,56 @@
+:root {
+  --dark-theme: #405e59;
+  --light-theme: #95b08b;
+  --dark-accent: #9e837d;
+  --light-accent: #bfd6ff;
+}
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe8d6;
+  font-family: serif;
+  font-size: 16px;
+}
+
+/* Navbar Styling */
+
+.navbar {
+  background-color: #4c333d !important;
+}
+
+/* Hero Styling */
+
+#hero {
+  background-image: url("../images/herobg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+}
+
+h1 {
+  font-weight: bolder !important;
+  color: #4c333d;
+  text-shadow: 2px 2px var(--dark-accent);
+}
+
+/* About Me */
+.intro-heading {
+  padding-top: 2rem;
+}
+
+.intro-text {
+  padding: 1rem 5rem;
+  font-size: 1.2rem;
+}
+
+#profile {
+  border-radius: 50%;
+  padding: 1rem 2rem;
+}
+
+/* Card Styling */
