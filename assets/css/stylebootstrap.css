@@ -1,8 +1,8 @@
 :root {
-  --dark-theme: #405e59;
-  --light-theme: #95b08b;
-  --dark-accent: #9e837d;
-  --light-accent: #bfd6ff;
+  --dark-theme: #4c333d;
+  --light-theme: #ffe8d6;
+  --card-accent: #405e59;
+  --btn-accent: #95b08b;
 }
 
 /* General Styles */
@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #ffe8d6;
+  background-color: var(--light-theme);
   font-family: serif;
   font-size: 16px;
 }
@@ -19,7 +19,7 @@ body {
 /* Navbar Styling */
 
 .navbar {
-  background-color: #4c333d !important;
+  background-color: var(--dark-theme);
 }
 
 /* Hero Styling */
@@ -34,8 +34,8 @@ body {
 
 h1 {
   font-weight: bolder !important;
-  color: #4c333d;
-  text-shadow: 2px 2px var(--dark-accent);
+  color: var(--dark-theme);
+  text-shadow: 2px 2px #9e837d;
 }
 
 /* About Me */
@@ -50,7 +50,53 @@ h1 {
 
 #profile {
   border-radius: 50%;
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
 }
 
 /* Card Styling */
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  margin: 2rem 0rem;
+  border: 3px solid var(--card-accent);
+}
+
+.card-body {
+  background-color: var(--card-accent);
+  color: #ffe8d6;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  transition: 0.5s ease;
+  background-color: black;
+}
+.card:hover .overlay {
+  opacity: 0;
+}
+
+.btn {
+  background-color: var(--btn-accent);
+}
+
+.btn a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Contact Me Styling */
+#contactMe {
+  background-color: var(--dark-theme);
+  color: var(--light-theme);
+  margin-top: 2rem;
+  padding: 2rem;
+}
