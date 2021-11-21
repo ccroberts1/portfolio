@@ -1,10 +1,22 @@
 # Dev Portfolio
 
 ## Description
-This project is to create a professional portfolio that can be used to demonstrate my skills via various projects. The projects listed in the portfolio are all still currently in progress so I do not have active links for them in that section. Once the projects are up and running, I will add those links to the portfolio. 
+
+This project was to create a professional portfolio that can be used to demonstrate my skills via various projects. The projects listed in the portfolio are composed of a team project, several smaller web applications and a few applications currently in progress. The two that are still in progress have links to the GitHub repositories but the deployment links are currently inactive. Once these are completed, the deployment links will be fixed.
 
 ## Screenshot
-![image](https://user-images.githubusercontent.com/78979205/140003436-a74651fd-b4f1-4cc7-a8c9-3e21cccd9aab.png)
+
+![image]()
 
 ## Link
+
 [Deployed Application](https://ccroberts1.github.io/portfolio/)
+
+## License
+
+MIT
+
+## Contact Info
+
+- Email: caitlin.coy.roberts@gmail.com
+- Twitter: https://twitter.com/caitlincroberts
