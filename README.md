@@ -6,7 +6,7 @@ This project was to create a professional portfolio that can be used to demonstr
 
 ## Screenshot
 
-![image]()
+![image](assets/images/portfolioScreenshot.png)
 
 ## Link
 
