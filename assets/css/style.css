@@ -12,7 +12,7 @@
 
 body {
   background-color: var(--light-theme);
-  font-family: serif;
+  font-family: "Vollkorn", serif;
   font-size: 16px;
 }
 
@@ -34,6 +34,7 @@ body {
 }
 
 h1 {
+  font-size: 6rem !important;
   font-weight: bolder !important;
   color: var(--dark-theme);
   text-shadow: 2px 2px #9e837d;
